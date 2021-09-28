@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentree</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/default.css">
+    <link rel="stylesheet" href="/scss/index.css">
+    <link rel="stylesheet" href="/plugin/swiper/swiper.css">
+    <script src="/plugin/swiper/swiper.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="/">
+                <img src="/img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="invest-link">
+            <a href="">
+                Investor Relations
+            </a>
+        </div>
+    </div>
+    <div id="header-m" style="display: none;">
+        <div class="top">
+           <div class="logo">
+               <a href="/">
+                    <img src="/img/logo.png" alt="">
+                </a>
+           </div>
+           <div class="menu">
+               <img src="/img/header-m-menu.png" alt="">
+           </div>
+        </div>
+        <div class="link-wrap">
+            <ul>
+                <li onclick="fnMove_m('wrap-02')">
+                    <a href="#">
+                        Solution
+                    </a>
+                </li>
+                <li onclick="fnMove_m('wrap-03')">
+                    <a href="#">
+                        Divices
+                    </a>
+                </li>
+                <li onclick="fnMove_m('wrap-04')">
+                    <a href="#">
+                        References
+                    </a>
+                </li>
+                <li onclick="fnMove_m('wrap-05')">
+                    <a href="#">
+                        Partners
+                    </a>
+                </li>
+                <li onclick="fnMove_m('wrap-06')">
+                    <a href="#">
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="invest-link">
+            <a href="">
+                Investor Relations
+            </a>
+        </div>
+    </div>
+    <script>
+        $('#header-m .top .menu').click(function() {
+            $('#header-m').toggleClass('on');
+            
+            if($('#header-m').hasClass('on')) {
+                $('#header-m .top .menu img').attr('src', '/img/header-m-close.png');
+                $('#header-m').css('height', '100%');
+            } else {
+                $('#header-m .top .menu img').attr('src', '/img/header-m-menu.png');
+                $('#header-m').css('height', '90px');
+            }
+        });
+    </script>
+    <div class="wrap-01">
+        <div class="main-text">
+            <div class="icon">
+                <img src="/img/01_wrap_img.png" alt="">
+            </div>
+            <h1 class="text">
+                Every Link To The World
+            </h1>
+            <h2>
+                <b>ROOTLINK</b> is developing our lives<br>with innovative services
+            </h2>
+            <div class="btm-arrow">
+                <img src="/img/01_wrap_btm_arrow.png" alt="" onclick="fnMove('wrap-02')">
+            </div>
+        </div>
+    </div>
+    <div class="wrap-02">
+        <div class="container">
+            <div class="title">
+                <b>ROOTLINK</b> SOLUTION
+            </div>
+            <div class="text">
+                ROOTLINK builds a control system that enable integrated management into its own solution through the data from the device.<br>
+                ROOTLINK’s Control systems are avilable in various areas such as facilities and devices.<br>
+                And It has excellent security and is customizable. Many global companies are looking for ROOTLINK.
+            </div>
+            <div class="img-wrap">
+                <img src="/img/02_wrap_img.png" alt="" class="pc-wrap02-img">
+                <img src="/img/02_wrap_img_m.png" alt="" class="m-wrap02-img" style="display: none;">
+            </div>
+        </div>
+        <div class="sub-header">
+            <ul>
+                <li class="on" onclick="fnMove('wrap-02')">
+                    Solution
+                </li>
+                <li onclick="fnMove('wrap-03')">
+                    Divices
+                </li>
+                <li onclick="fnMove('wrap-04')">
+                    References
+                </li>
+                <li onclick="fnMove('wrap-05')">
+                    Partners
+                </li>
+                <li onclick="fnMove('wrap-06')">
+                    Contact us
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-03">
+        <div class="container">
+            <div class="title">
+                <b>ROOTLINK</b> DIVICES
+            </div>
+            <div class="text">
+                Securing loT core technologies and product lineups in all areas of the fourth industry.
+            </div>
+            <div class="img-wrap">
+                <ul class="cboth">
+                    <li class="fl">
+                        <div class="img">
+                            <img src="/img/03_wrap_img_01.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                Safety management terminal
+                            </p>
+                            <p>
+                                Location transmission,<br>Motion detection
+                            </p>
+                        </div>
+                    </li>
+                    <li class="fl">
+                        <div class="img">
+                            <img src="/img/03_wrap_img_02.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                Pen mouse
+                            </p>
+                            <p>
+                                Touch button,<br>Mouse pointer
+                            </p>
+                        </div>
+                    </li>
+                    <li class="fl">
+                        <div class="img">
+                            <img src="/img/03_wrap_img_03.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                Touch remote control
+                            </p>
+                            <p>
+                                Full touch,<br>IR Method support
+                            </p>
+                        </div>
+                    </li>
+                    <li class="fl">
+                        <div class="img">
+                            <img src="/img/03_wrap_img_04.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                Safety management terminal
+                            </p>
+                            <p>
+                                Link to Application,<br>Function matching
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-header">
+            <ul>
+                <li onclick="fnMove('wrap-02')">
+                    Solution
+                </li>
+                <li class="on" onclick="fnMove('wrap-03')">
+                    Divices
+                </li>
+                <li onclick="fnMove('wrap-04')">
+                    References
+                </li>
+                <li onclick="fnMove('wrap-05')">
+                    Partners
+                </li>
+                <li onclick="fnMove('wrap-06')">
+                    Contact us
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-04">
+        <div class="top">
+            <div class="container">
+                <div class="title-wrap">
+                    <p>
+                        <b>PUMP</b> CONTROL SYSTEM
+                    </p>
+                    <p>
+                        The ROOTLINK Control System is a solution with smart pump<br>
+                        management capabilities that global pump manufacturers want to build.<br>
+                        Our solution has excellent data analyties and a security system.
+                    </p>
+                    <div class="icons">
+                        <ul class="cboth">
+                            <li class="fl cboth">
+                                <div class="fl icon">
+                                    <img src="/img/04_wrap_icon_01.png" alt="">
+                                </div>
+                                <div class="text fl">
+                                    Pump Network<br>Security System
+                                </div>
+                            </li>
+                            <li class="fl cboth">
+                                <div class="fl icon">
+                                    <img src="/img/04_wrap_icon_02.png" alt="">
+                                </div>
+                                <div class="text fl">
+                                    Pump Control System<br>through Data Analysis
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="/img/04_wrap_img_01.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="btm">
+            <div class="container">
+                <div class="img">
+                    <div class="wrap cboth">
+                        <div class="box fl">
+                            <div class="text">
+                                RTTG(Telegraphic Repeater)<br>
+                                Real-time Tire<br>
+                                Telecommunication Gateway
+                            </div>
+                            <div class="img">
+                                <img src="/img/04_wrap_img_02.png" alt="" class="pc-wrap04-img">
+                                <img src="/img/04_wrap_img_02_m.png" alt="" class="m-wrap04-img1" style="display: none;">
+                            </div>
+                        </div>
+                        <div class="box fl">
+                            <div class="text">
+                                RTMS(Control System)<br>
+                                Real-time Tire<br>
+                                Monitoring System
+                            </div>
+                            <div class="img">
+                                <img src="/img/04_wrap_img_03.png" alt="" class="pc-wrap04-img">
+                                <img src="/img/04_wrap_img_03_m.png" alt="" class="m-wrap04-img2" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-wrap">
+                    <p>
+                        <b>SMART</b> TIRE
+                    </p>
+                    <p>
+                        A smart sensor installed on the tire sends tire status information.<br>
+                        So, Real-time management is possible<br>
+                        in the integrated management control system.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-header">
+            <ul>
+                <li onclick="fnMove('wrap-02')">
+                    Solution
+                </li>
+                <li onclick="fnMove('wrap-03')">
+                    Divices
+                </li>
+                <li class="on" onclick="fnMove('wrap-04')">
+                    References
+                </li>
+                <li onclick="fnMove('wrap-05')">
+                    Partners
+                </li>
+                <li onclick="fnMove('wrap-06')">
+                    Contact us
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-05">
+        <div class="container">
+            <div class="title">
+                <b>PARTNERS</b>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_kumho.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_hyundai.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_samjin.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_ij.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_lgup.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_kumho.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_hyundai.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_samjin.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_ij.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_lgup.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_kumho.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_hyundai.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_samjin.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_ij.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_lgup.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-container-m" style="display: none;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_kumho.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_hyundai.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_samjin.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_ij.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_lgup.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_kumho.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_hyundai.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_samjin.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_ij.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_lgup.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_kumho.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_hyundai.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_samjin.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_ij.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/05_wrap_lgup.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next-m" style="display: none;"></div>
+            <div class="swiper-button-prev-m" style="display: none;"></div>
+        </div>
+        <div class="sub-header">
+            <ul>
+                <li onclick="fnMove('wrap-02')">
+                    Solution
+                </li>
+                <li onclick="fnMove('wrap-03')">
+                    Divices
+                </li>
+                <li onclick="fnMove('wrap-04')">
+                    References
+                </li>
+                <li class="on" onclick="fnMove('wrap-05')">
+                    Partners
+                </li>
+                <li onclick="fnMove('wrap-06')">
+                    Contact us
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap-06">
+        <div class="container">
+            <div class="title">
+                <b>CONTACT</b> US
+            </div>
+            <div class="form-wrap cboth">
+                <div class="left-box fl">
+                    <div class="info-wrap">
+                        <a href="" class="map-link">
+                            GOOGLE MAP
+                        </a>
+                        <p>ROOTLINK</p>
+                        <p>
+                            282, Hagui-ro, Dongan-gu, Anyang-si, Gyeonggi-do, Republic of Korea
+                        </p>
+                        <div class="info">
+                            <ul class="cboth">
+                                <li class="fl img">
+                                    <img src="/img/06_wrap_icon_01.png" alt="">
+                                </li>
+                                <li class="fl text">
+                                    TEl. <b>1988-8805</b>
+                                </li>
+                                <li class="fl img">
+                                    <img src="/img/06_wrap_icon_02.png" alt="">
+                                </li>
+                                <li class="fl text">
+                                    E-mail. <b>rootlink@rootlink.co.kr</b>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <img src="/img/06_wrap_map.png" alt="">
+                    </div>
+                </div>
+                <div class="right-box fl">
+                    <div class="title-wrap">
+                        ONLINE INQUIRY
+                    </div>
+                    <form action="">
+                        <ul>
+                            <li>
+                                <span>(*)</span>
+                                <input type="text" placeholder="First name">
+                            </li>
+                            <li>
+                                <span>(*)</span>
+                                <input type="text" placeholder="Last name">
+                            </li>
+                            <li>
+                                <span>(*)</span>
+                                <input type="text" placeholder="Company">
+                            </li>
+                            <li>
+                                <span>(*)</span>
+                                <input type="text" placeholder="E-mail">
+                            </li>
+                            <li>
+                                <span>(*)</span>
+                                <input type="text" placeholder="Phone">
+                            </li>
+                            <li>
+                                <span>(*)</span>
+                                <input type="text" placeholder="Subject">
+                            </li>
+                            <li class="textarea">
+                                <span>(*)</span>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                            </li>
+                            <li>
+                                <div class="input-wrap">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            $('.wrap-06 .right-box form ul li input').focus(function() {
+               $(this).siblings('span').hide('fast'); 
+            });
+            $('.wrap-06 .right-box form ul li input').blur(function() {
+               $(this).siblings('span').show('fast'); 
+            });
+        </script>
+
+        <div class="sub-header">
+            <ul>
+                <li onclick="fnMove('wrap-02')">
+                    Solution
+                </li>
+                <li onclick="fnMove('wrap-03')">
+                    Divices
+                </li>
+                <li onclick="fnMove('wrap-04')">
+                    References
+                </li>
+                <li onclick="fnMove('wrap-05')">
+                    Partners
+                </li>
+                <li class="on" onclick="fnMove('wrap-06')">
+                    Contact us
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        Copyright ⓒ RootLink Corp. All Rights Reserved.
+    </div>
+    <script>
+        function fnMove(seq) {
+            var offset = $("." + seq).offset();
+            $('html, body').animate({
+                scrollTop: offset.top + -120
+            }, 400);
+        }
+        function fnMove_m(seq) {
+            var offset = $("." + seq).offset();
+            $('html, body').animate({
+                scrollTop: offset.top + -90
+            }, 400);
+        }
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                var os = $('.wrap-02').offset();
+
+                if (scroll >= os.top - 120) {
+                    $('#header').addClass('on').find('.logo a img').attr('src', '/img/scroll_logo.png');
+                } else {
+                    $('#header').removeClass('on').find('.logo a img').attr('src', '/img/logo.png');
+                }
+            });
+
+            $('.swiper-container').each(function(i) {
+                var mySwiper = new Swiper($('.swiper-container')[i], {
+
+                    // Navigation arrows
+                    nextButton: $('.swiper-button-next')[i],
+                    prevButton: $('.swiper-button-prev')[i],
+
+                    // Optional parameters
+                    slidesPerView: 5,
+                    simulateTouch: false,
+                    spaceBetween: 100,
+                    paginationClickable: true,
+                });
+            });
+
+            $('.swiper-container-m').each(function(i) {
+                var mySwiper = new Swiper($('.swiper-container-m')[i], {
+
+                    // Navigation arrows
+                    nextButton: $('.swiper-button-next-m')[i],
+                    prevButton: $('.swiper-button-prev-m')[i],
+
+                    // Optional parameters
+                    slidesPerView: 1,
+                    simulateTouch: false,
+                    spaceBetween: 100,
+                    paginationClickable: true,
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
